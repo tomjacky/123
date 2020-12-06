@@ -7,7 +7,7 @@ external-controller: 127.0.0.1:9090
 proxies:
   - name: IBM 168
     type: vmess
-    server: 104.20.254.25
+    server: 104.17.130.209
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "1"
@@ -19,7 +19,7 @@ proxies:
       Host: soft-dust-fb0e.wecker168.workers.dev
   - name: V2xjp
     type: vmess
-    server: 104.20.254.25
+    server: 104.17.130.209
     port: "443"
     uuid: 9a6d2463-9490-4d47-b225-3b73d1295545
     alterId: "64"
@@ -31,7 +31,7 @@ proxies:
       Host: young-bird-4f8a.wecker168.workers.dev
   - name: IBM 88
     type: vmess
-    server: 104.20.254.25
+    server: 104.17.130.209
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "1"
@@ -44,7 +44,7 @@ proxies:
     _index: 2
   - name: heroku-fcpp
     type: vmess
-    server: 104.20.254.25
+    server: 104.17.130.209
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
@@ -57,7 +57,7 @@ proxies:
       Host: fcpp.wecker168.workers.dev
   - name: heroku-fcppl
     type: vmess
-    server: 104.20.254.25
+    server: 104.17.130.209
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
