@@ -21,7 +21,7 @@ proxies:
     _index: 0
   - name: V2xjp
     type: vmess
-    server: 104.17.130.209
+    server: 104.20.70.33
     port: "443"
     uuid: 9a6d2463-9490-4d47-b225-3b73d1295545
     alterId: "64"
@@ -32,9 +32,10 @@ proxies:
     ws-path: /6b857/
     ws-headers:
       Host: young-bird-4f8a.wecker168.workers.dev
+    _index: 1
   - name: IBM 88
     type: vmess
-    server: 104.17.130.209
+    server: 104.17.233.212
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "1"
@@ -45,9 +46,10 @@ proxies:
     ws-path: path
     ws-headers:
       Host: black-rain-5add.wecker168.workers.dev
+    _index: 2
   - name: heroku-fcpp
     type: vmess
-    server: 104.17.130.209
+    server: 104.28.23.208
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
@@ -58,10 +60,9 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcpp.wecker168.workers.dev
-    _index: 3
   - name: heroku-fcppl
     type: vmess
-    server: 104.17.130.209
+    server: 104.25.93.30
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
@@ -72,7 +73,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcppl.wecker168.workers.dev
-    _index: 4
 proxy-groups:
   - name: 🚀 节点选择
     type: select
