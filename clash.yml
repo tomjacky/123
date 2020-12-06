@@ -13,10 +13,12 @@ proxies:
     alterId: "1"
     cipher: auto
     tls: true
+    skip-cert-verify: true
     network: ws
     ws-path: path
     ws-headers:
       Host: soft-dust-fb0e.wecker168.workers.dev
+    _index: 0
   - name: V2xjp
     type: vmess
     server: 104.17.130.209
@@ -25,6 +27,7 @@ proxies:
     alterId: "64"
     cipher: auto
     tls: true
+    skip-cert-verify: true
     network: ws
     ws-path: /6b857/
     ws-headers:
@@ -37,11 +40,11 @@ proxies:
     alterId: "1"
     cipher: auto
     tls: true
+    skip-cert-verify: true
     network: ws
     ws-path: path
     ws-headers:
       Host: black-rain-5add.wecker168.workers.dev
-    _index: 2
   - name: heroku-fcpp
     type: vmess
     server: 104.17.130.209
@@ -55,6 +58,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcpp.wecker168.workers.dev
+    _index: 3
   - name: heroku-fcppl
     type: vmess
     server: 104.17.130.209
@@ -68,6 +72,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcppl.wecker168.workers.dev
+    _index: 4
 proxy-groups:
   - name: 🚀 节点选择
     type: select
