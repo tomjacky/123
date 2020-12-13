@@ -8,7 +8,7 @@ proxies:
 
   - {name: heroku-fcpp, server: 104.20.134.111, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcpp.wecker168.workers.dev}}
 
-  - {name: heroku-fcppl, server: 104.25.93.30, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcppl.wecker168.workers.dev}}
+  - {name: heroku-fcppl, server: 104.20.254.25, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcppl.wecker168.workers.dev}}
 
 proxy-groups:
 
