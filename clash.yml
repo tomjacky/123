@@ -49,7 +49,7 @@ proxies:
     _index: 2
   - name: heroku-fcpp
     type: vmess
-    server: 104.20.134.111
+    server: 104.20.254.25
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
@@ -62,7 +62,7 @@ proxies:
       Host: fcpp.wecker168.workers.dev
   - name: heroku-fcppl
     type: vmess
-    server: 104.20.134.111
+    server: 104.20.254.25
     port: "443"
     uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
     alterId: "64"
