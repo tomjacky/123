@@ -73,6 +73,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcppl.wecker168.workers.dev
+  - name: heroku-fcpplal
+    type: vmess
+    server: 104.20.254.25
+    port: "443"
+    uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
+    alterId: "64"
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: fcpplal.wecker168.workers.dev
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -83,6 +96,7 @@ proxy-groups:
       - IBM 88
       - heroku-fcpp
       - heroku-fcppl
+      - heroku-fcpplal
       - DIRECT
     _index: 0
   - name: ♻️ 自动选择
@@ -95,6 +109,7 @@ proxy-groups:
       - IBM 88
       - heroku-fcpp
       - heroku-fcppl
+      - heroku-fcpplal
     _index: 1
   - name: 🌍 国外媒体
     type: select
@@ -106,6 +121,7 @@ proxy-groups:
       - V2xjp
       - heroku-fcpp
       - heroku-fcppl
+      - heroku-fcpplal
       - 🎯 全球直连
   - name: 📲 电报信息
     type: select
