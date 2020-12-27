@@ -136,8 +136,8 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
+      - 🚀 节点选择
   - name: 📢 谷歌FCM
     type: select
     proxies:
