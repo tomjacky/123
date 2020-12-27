@@ -1,14 +1,16 @@
 proxies:
 
-  - {name: IBM88, server: 104.20.134.111, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: path, ws-headers: {Host: soft-dust-fb0e.wecker168.workers.dev}}
+  - {name: IBM88, server: 104.20.254.25, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: path, ws-headers: {Host: soft-dust-fb0e.wecker168.workers.dev}}
 
   - {name: v2xjp, server: 104.20.254.25, port: 443, type: vmess, uuid: 9a6d2463-9490-4d47-b225-3b73d1295545, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /6b857/, ws-headers: {Host: young-bird-4f8a.wecker168.workers.dev}}
 
   - {name: IBM168, server: 104.20.254.25, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: path, ws-headers: {Host: black-rain-5add.wecker168.workers.dev}}
 
-  - {name: heroku-fcpp, server: 104.20.134.111, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcpp.wecker168.workers.dev}}
+  - {name: heroku-fcpp, server: 104.20.254.25, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcpp.wecker168.workers.dev}}
 
   - {name: heroku-fcppl, server: 104.20.254.25, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcppl.wecker168.workers.dev}}
+
+  - {name: heroku-fcpplal, server: 104.22.49.194, port: 443, type: vmess, uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fcpplal.wecker168.workers.dev}}
 
 proxy-groups:
 
@@ -31,6 +33,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
  
   - name: ♻️ 自动选择
 
@@ -51,6 +55,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
 
   - name: 国外媒体
 
@@ -74,6 +80,8 @@ proxy-groups:
 
       - heroku-fcppl
 
+      - heroku-fcpplal
+
   - name: 📲 电报信息
 
     type: select
@@ -93,6 +101,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
 
   - name: Ⓜ️ 微软服务
 
@@ -114,6 +124,8 @@ proxy-groups:
 
       - heroku-fcppl
 
+      - heroku-fcpplal
+
   - name: 🍎 苹果服务
 
     type: select
@@ -133,6 +145,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
 
   - name: 谷歌FCM
 
@@ -155,6 +169,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
 
   - name: 全球直连
 
@@ -209,6 +225,8 @@ proxy-groups:
       - heroku-fcpp
 
       - heroku-fcppl
+
+      - heroku-fcpplal
 
 rules:
 
