@@ -21,7 +21,7 @@ proxies:
     _index: 0
   - name: V2xjp
     type: vmess
-    server: 104.20.254.25
+    server: v2xjp.ddns.net
     port: "443"
     uuid: 9a6d2463-9490-4d47-b225-3b73d1295545
     alterId: "64"
@@ -31,7 +31,7 @@ proxies:
     network: ws
     ws-path: /6b857/
     ws-headers:
-      Host: young-bird-4f8a.wecker168.workers.dev
+      Host: v2xjp.wecker168.workers.dev
     _index: 1
   - name: IBM 88
     type: vmess
