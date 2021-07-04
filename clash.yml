@@ -17,7 +17,7 @@ proxies:
     network: ws
     ws-path: path
     ws-headers:
-      Host: black-rain-5add.wecker168.workers.dev
+      Host: ibm168.wecker168.workers.dev
     _index: 0
   - name: IBM 88
     type: vmess
@@ -31,7 +31,7 @@ proxies:
     network: ws
     ws-path: path
     ws-headers:
-      Host: soft-dust-fb0e.wecker168.workers.dev
+      Host: ibm88.wecker168.workers.dev
     _index: 1
   - name: heroku-fcpp
     type: vmess
