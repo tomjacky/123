@@ -5,6 +5,20 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - name: IBM 168
+    type: vmess
+    server: 172.67.209.42
+    port: "443"
+    uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
+    alterId: "1"
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: path
+    ws-headers:
+      Host: black-rain-5add.wecker168.workers.dev
+    _index: 0
   - name: IBM 88
     type: vmess
     server: 104.16.207.69
@@ -18,20 +32,6 @@ proxies:
     ws-path: path
     ws-headers:
       Host: soft-dust-fb0e.wecker168.workers.dev
-    _index: 0
-- name: IBM 168
-    type: vmess
-    server: 172.67.209.42
-    port: "443"
-    uuid: 8e82a9a5-b894-4b4d-bf2e-dbf0807572aa
-    alterId: "1"
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-path: path
-    ws-headers:
-      Host: black-rain-5add.wecker168.workers.dev
     _index: 1
   - name: heroku-fcpp
     type: vmess
@@ -72,7 +72,8 @@ proxies:
     ws-path: /
     ws-headers:
       Host: fcpplal.wecker168.workers.dev
-  - name: heroku-wecker88-0
+    _index: 4
+  - name: Heroku-wecker88-0
     type: vmess
     server: 172.67.184.78
     port: "443"
@@ -85,7 +86,8 @@ proxies:
     ws-path: /
     ws-headers:
       Host: wecker88-0.wecker168.workers.dev
-   - name: heroku-wecker88-1
+    _index: 6
+  - name: Heroku-wecker88-1
     type: vmess
     server: 172.64.92.56
     port: "443"
@@ -97,19 +99,20 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: wecker88-1.wecker168.workers.dev     
+      Host: wecker88-1.wecker168.workers.dev
+    _index: 6
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - IBM 88
       - IBM 168
+      - IBM 88
       - heroku-fcpp
       - heroku-fcppl
       - heroku-fcpplal
-      - heroku-wecker88-0
-      - heroku-wecker88-1
+      - Heroku-wecker88-0
+      - Heroku-wecker88-1
       - DIRECT
     _index: 0
   - name: ♻️ 自动选择
@@ -117,26 +120,26 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - IBM 88
       - IBM 168
+      - IBM 88
       - heroku-fcpp
       - heroku-fcppl
       - heroku-fcpplal
-      - heroku-wecker88-0
-      - heroku-wecker88-1
+      - Heroku-wecker88-0
+      - Heroku-wecker88-1
     _index: 1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - IBM 88
       - IBM 168
+      - IBM 88
       - heroku-fcpp
       - heroku-fcppl
       - heroku-fcpplal
-      - heroku-wecker88-0
-      - heroku-wecker88-1
+      - Heroku-wecker88-0
+      - Heroku-wecker88-1
       - 🎯 全球直连
   - name: 📲 电报信息
     type: select
